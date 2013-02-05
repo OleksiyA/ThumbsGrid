@@ -1,0 +1,3 @@
+[submodule "third-party/AQGridView"]
+	path = third-party/AQGridView
+	url = https://github.com/OleksiyA/AQGridView.git
