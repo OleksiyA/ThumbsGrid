@@ -8,10 +8,6 @@
 
 #import "RDAboutViewController.h"
 
-@interface RDAboutViewController ()
-
-@end
-
 @implementation RDAboutViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

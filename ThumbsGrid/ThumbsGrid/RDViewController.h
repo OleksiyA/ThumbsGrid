@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AQGridView.h"
 
 @class RDDataManager;
 
-@interface RDViewController : UIViewController
+@interface RDViewController : UIViewController<AQGridViewDelegate, AQGridViewDataSource>
+
+@property (weak, nonatomic) IBOutlet AQGridView *gridView;
 
 @end

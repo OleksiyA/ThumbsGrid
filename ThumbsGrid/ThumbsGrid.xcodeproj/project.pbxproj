@@ -25,6 +25,9 @@
 		7AF429A416C1B16800C8A324 /* libAQGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF4294716C19EA700C8A324 /* libAQGridView.a */; };
 		7AF429A516C1B16C00C8A324 /* libGTMHTTPFetcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF429A116C1B15800C8A324 /* libGTMHTTPFetcher.a */; };
 		7AF429A816C1BADC00C8A324 /* RDAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF429A716C1BADC00C8A324 /* RDAboutViewController.m */; };
+		7AF429AB16C1C0DC00C8A324 /* RDGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF429AA16C1C0DC00C8A324 /* RDGridCell.m */; };
+		7AF429AD16C1C25E00C8A324 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF429AC16C1C25E00C8A324 /* QuartzCore.framework */; };
+		7AF429AF16C1CA9D00C8A324 /* errorLoadingImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AF429AE16C1CA9D00C8A324 /* errorLoadingImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,10 @@
 		7AF4299B16C1B15800C8A324 /* GTMHTTPFetcher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTMHTTPFetcher.xcodeproj; path = "../third-party/gtm-http-fetcher-read-only/Source/GTMHTTPFetcher.xcodeproj"; sourceTree = "<group>"; };
 		7AF429A616C1BADC00C8A324 /* RDAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDAboutViewController.h; sourceTree = "<group>"; };
 		7AF429A716C1BADC00C8A324 /* RDAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDAboutViewController.m; sourceTree = "<group>"; };
+		7AF429A916C1C0DC00C8A324 /* RDGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDGridCell.h; sourceTree = "<group>"; };
+		7AF429AA16C1C0DC00C8A324 /* RDGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDGridCell.m; sourceTree = "<group>"; };
+		7AF429AC16C1C25E00C8A324 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7AF429AE16C1CA9D00C8A324 /* errorLoadingImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = errorLoadingImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF429AD16C1C25E00C8A324 /* QuartzCore.framework in Frameworks */,
 				7AF429A516C1B16C00C8A324 /* libGTMHTTPFetcher.a in Frameworks */,
 				7AF429A416C1B16800C8A324 /* libAQGridView.a in Frameworks */,
 				7AF4291C16C19E5C00C8A324 /* UIKit.framework in Frameworks */,
@@ -119,6 +127,7 @@
 		7AF4291A16C19E5C00C8A324 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AF429AC16C1C25E00C8A324 /* QuartzCore.framework */,
 				7AF4291B16C19E5C00C8A324 /* UIKit.framework */,
 				7AF4291D16C19E5C00C8A324 /* Foundation.framework */,
 				7AF4291F16C19E5C00C8A324 /* CoreGraphics.framework */,
@@ -174,6 +183,7 @@
 		7AF4294816C1A9DB00C8A324 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7AF429AE16C1CA9D00C8A324 /* errorLoadingImage.png */,
 				7AF4294916C1A9F900C8A324 /* ImagesList.plist */,
 			);
 			name = Resources;
@@ -187,6 +197,8 @@
 				7AF4293A16C19E5D00C8A324 /* RDViewController.m */,
 				7AF429A616C1BADC00C8A324 /* RDAboutViewController.h */,
 				7AF429A716C1BADC00C8A324 /* RDAboutViewController.m */,
+				7AF429A916C1C0DC00C8A324 /* RDGridCell.h */,
+				7AF429AA16C1C0DC00C8A324 /* RDGridCell.m */,
 			);
 			name = "User Interface";
 			sourceTree = "<group>";
@@ -303,6 +315,7 @@
 				7AF4293216C19E5D00C8A324 /* Default-568h@2x.png in Resources */,
 				7AF4293516C19E5D00C8A324 /* MainStoryboard.storyboard in Resources */,
 				7AF4294A16C1A9F900C8A324 /* ImagesList.plist in Resources */,
+				7AF429AF16C1CA9D00C8A324 /* errorLoadingImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +333,7 @@
 				7AF4295116C1AC9500C8A324 /* RDDataManager.m in Sources */,
 				7AF4295416C1AD4D00C8A324 /* RDItem.m in Sources */,
 				7AF429A816C1BADC00C8A324 /* RDAboutViewController.m in Sources */,
+				7AF429AB16C1C0DC00C8A324 /* RDGridCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,9 +422,16 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ThumbsGrid/ThumbsGrid-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../third-party/gtm-http-fetcher-read-only/Source";
+				HEADER_SEARCH_PATHS = (
+					"../third-party/gtm-http-fetcher-read-only/Source",
+					"../third-party/AQGridView/Classes",
+				);
 				INFOPLIST_FILE = "ThumbsGrid/ThumbsGrid-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -421,9 +442,16 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ThumbsGrid/ThumbsGrid-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../third-party/gtm-http-fetcher-read-only/Source";
+				HEADER_SEARCH_PATHS = (
+					"../third-party/gtm-http-fetcher-read-only/Source",
+					"../third-party/AQGridView/Classes",
+				);
 				INFOPLIST_FILE = "ThumbsGrid/ThumbsGrid-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -24,6 +24,8 @@
     }
     
     self.cachedImage = image;
+    
+    NSLog(@"Loaded image for Url [%@] with size [%.0fx%.0f].",self.itemURLString,image.size.width,image.size.height);
 }
 
 -(void)startLoadingItem
