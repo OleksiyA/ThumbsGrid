@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>60AC6CF2-4086-45D5-B437-64B1B451DFF1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ThumbsGrid</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6049CB69-AFEA-4B96-A025-887A88419D24</key>
+		<string>https://github.com/OleksiyA/ThumbsGrid.git</string>
+		<key>CEDACDF8-0166-4DEA-8F02-9A617B35C691</key>
+		<string>https://github.com/OleksiyA/AQGridView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ThumbsGrid/ThumbsGrid.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6049CB69-AFEA-4B96-A025-887A88419D24</key>
+		<string>../../..</string>
+		<key>CEDACDF8-0166-4DEA-8F02-9A617B35C691</key>
+		<string>../../../third-party/AQGridView</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/OleksiyA/ThumbsGrid.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6049CB69-AFEA-4B96-A025-887A88419D24</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CEDACDF8-0166-4DEA-8F02-9A617B35C691</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AQGridView</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6049CB69-AFEA-4B96-A025-887A88419D24</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ThumbsGrid</string>
+		</dict>
+	</array>
+</dict>
+</plist>

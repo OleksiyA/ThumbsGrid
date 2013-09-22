@@ -3,7 +3,8 @@
 //  ThumbsGrid
 //
 //  Created by Oleksiy Ivanov on 2/6/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import "AQGridViewCell.h"
@@ -12,10 +13,10 @@
 
 @interface RDGridCell : AQGridViewCell
 
-@property(strong)RDItem*                    item;
-@property(strong)UIImageView*               imageView;
-@property(strong)UIActivityIndicatorView*   activityIndicator;
+@property (strong) RDItem *item;
+@property (strong, nonatomic) UIImageView *imageView;
+@property (strong, nonatomic) UIActivityIndicatorView *activityIndicator;
 
--(id)initWithItem:(RDItem*)item;
+- (instancetype)initWithItem:(RDItem *)item;
 
 @end

@@ -3,7 +3,8 @@
 //  ThumbsGrid
 //
 //  Created by Oleksiy Ivanov on 2/5/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import <UIKit/UIKit.h>
@@ -12,7 +13,7 @@
 
 @interface RDAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic)UIWindow*  window;
-@property (strong)RDAppController*      appController;
+@property (strong, nonatomic) UIWindow *window;
+@property (strong) RDAppController *appController;
 
 @end

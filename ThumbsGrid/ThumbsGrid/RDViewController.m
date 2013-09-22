@@ -3,7 +3,8 @@
 //  ThumbsGrid
 //
 //  Created by Oleksiy Ivanov on 2/5/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import "RDViewController.h"
@@ -17,10 +18,10 @@
 @implementation RDViewController
 
 #pragma mark Internal interface
--(RDDataManager*)dataSource
+- (RDDataManager *)dataSource
 {
-    RDAppDelegate* appdelegate = (RDAppDelegate*)[[UIApplication sharedApplication]delegate];
-    RDDataManager* dataManager = appdelegate.appController.dataManager;
+    RDAppDelegate *appdelegate = (RDAppDelegate *)[[UIApplication sharedApplication]delegate];
+    RDDataManager *dataManager = appdelegate.appController.dataManager;
     
     return dataManager;
 }
@@ -34,7 +35,7 @@
     self.gridView.separatorStyle = AQGridViewCellSeparatorStyleSingleLine;
 }
 
--(void)viewWillAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
@@ -47,13 +48,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewDidUnload {
+- (void)viewDidUnload
+{
     [self setGridView:nil];
     [super viewDidUnload];
 }
 
 #pragma mark AQGridViewDelegate methods
-- (void) gridView: (AQGridView *) gridView didSelectItemAtIndex: (NSUInteger) index
+- (void) gridView:(AQGridView *)gridView didSelectItemAtIndex:(NSUInteger)index
 {
     NSLog(@"Item at index [%d] selected.",index);
 }
@@ -66,11 +68,11 @@
     return cnt;
 }
 
-- (AQGridViewCell *) gridView: (AQGridView *) gridView cellForItemAtIndex: (NSUInteger) index
+- (AQGridViewCell *)gridView:(AQGridView *)gridView cellForItemAtIndex:(NSUInteger)index
 {
-    RDItem* item = [[self dataSource]itemAtIndex:index];
+    RDItem *item = [[self dataSource]itemAtIndex:index];
     
-    RDGridCell* gridCell = [[RDGridCell alloc]initWithItem:item];
+    RDGridCell *gridCell = [[RDGridCell alloc]initWithItem:item];
     
     return gridCell;
 }

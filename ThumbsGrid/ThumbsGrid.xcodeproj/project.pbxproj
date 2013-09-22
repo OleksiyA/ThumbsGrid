@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7AD6476F17EF929700F83D47 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7AF4291816C19E5C00C8A324 /* ThumbsGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThumbsGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF4291B16C19E5C00C8A324 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AF4291D16C19E5C00C8A324 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +109,7 @@
 		7AF4290F16C19E5C00C8A324 = {
 			isa = PBXGroup;
 			children = (
+				7AD6476F17EF929700F83D47 /* README.md */,
 				7AF4291A16C19E5C00C8A324 /* Frameworks */,
 				7AF4291916C19E5C00C8A324 /* Products */,
 				7AF4294816C1A9DB00C8A324 /* Resources */,
@@ -252,6 +254,11 @@
 				CLASSPREFIX = RD;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Oleksiy Ivanov";
+				TargetAttributes = {
+					7AF4291716C19E5C00C8A324 = {
+						DevelopmentTeam = RQW96GL67X;
+					};
+				};
 			};
 			buildConfigurationList = 7AF4291316C19E5C00C8A324 /* Build configuration list for PBXProject "ThumbsGrid" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -420,6 +427,7 @@
 		7AF4293F16C19E5D00C8A324 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ThumbsGrid/ThumbsGrid-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -440,6 +448,7 @@
 		7AF4294016C19E5D00C8A324 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ThumbsGrid/ThumbsGrid-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -476,6 +485,7 @@
 				7AF4294016C19E5D00C8A324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

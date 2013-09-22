@@ -3,7 +3,8 @@
 //  ThumbsGrid
 //
 //  Created by Oleksiy Ivanov on 2/5/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import <Foundation/Foundation.h>
@@ -12,10 +13,10 @@
 
 @interface RDDataManager : NSObject
 
-@property(strong)NSArray*               itemsUrls;
-@property(strong)NSMutableArray*        cachedItemsObjects;
+@property (strong) NSArray *itemsUrls;
+@property (strong) NSMutableArray *cachedItemsObjects;
 
--(int)numberOfItems;
--(RDItem*)itemAtIndex:(int)index;
+- (int)numberOfItems;
+- (RDItem *)itemAtIndex:(int)index;
 
 @end

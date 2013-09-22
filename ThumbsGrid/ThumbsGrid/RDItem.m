@@ -3,7 +3,8 @@
 //  ThumbsGrid
 //
 //  Created by Oleksiy Ivanov on 2/5/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import "RDItem.h"
@@ -12,40 +13,36 @@
 @implementation RDItem
 
 #pragma mark Internal interface
--(void)handleDataForItemWasDownloaded:(NSData*)data
+- (void)handleDataForItemWasDownloaded:(NSData *)data
 {
     UIImage* image = [UIImage imageWithData:data];
     
-    if(image.size.width<1 || image.size.height<1)
-    {
-        NSLog(@"Error allocating image from loaded data for Url [%@]. Data lenght [%d].",self.itemURLString,[data length]);
+    if ( image.size.width<1 || image.size.height<1 ) {
+        NSLog(@"Error allocating image from loaded data for Url [%@]. Data lenght [%d].", self.itemURLString, [data length]);
         
         return;
     }
     
     self.cachedImage = image;
     
-    NSLog(@"Loaded image for Url [%@] with size [%.0fx%.0f].",self.itemURLString,image.size.width,image.size.height);
+    NSLog(@"Loaded image for Url [%@] with size [%.0fx%.0f].", self.itemURLString, image.size.width, image.size.height);
 }
 
--(void)startLoadingItem
+- (void)startLoadingItem
 {
     self.loading = YES;
     
     NSURL *url = [NSURL URLWithString:self.itemURLString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    GTMHTTPFetcher* myFetcher = [GTMHTTPFetcher fetcherWithRequest:request];
+    GTMHTTPFetcher *myFetcher = [GTMHTTPFetcher fetcherWithRequest:request];
     
     [myFetcher beginFetchWithCompletionHandler:^(NSData *retrievedData, NSError *error) {
         
-        if (error != nil)
-        {
+        if (error != nil) {
             // status code or network error
-            NSLog(@"Error downloading item data for Url [%@], error [%@].",self.itemURLString,error);
+            NSLog(@"Error downloading item data for Url [%@], error [%@].", self.itemURLString, error);
             
-        }
-        else
-        {
+        } else {
             // succeeded
             [self handleDataForItemWasDownloaded:retrievedData];
         }
@@ -55,7 +52,7 @@
 }
 
 #pragma mark Allocation and Deallocation
--(id)initWitUrlString:(NSString*)urlString
+- (instancetype)initWitUrlString:(NSString *)urlString
 {
     self = [super init];
     
